@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio14</title>
+</head>
+<body>
+
+    <script>
+        var valor = parseInt(prompt("Digite o valor para saque:"));
+        var cedula100 = Math.floor(valor / 100);
+        valor = valor % 100;
+        var cedula50 = Math.floor(valor / 50);
+        valor = valor % 50;
+        var cedula20 = Math.floor(valor / 20);
+        valor = valor % 20;
+        var cedula10 = Math.floor(valor / 10);
+        valor = valor % 10;
+        var cedula5 = Math.floor(valor / 5);
+        valor = valor % 5;
+        var cedula2 = Math.floor(valor / 2);
+        valor = valor % 2;
+        var cedula1 = valor;
+
+        console.log("Cédulas para saque:");
+           console.log("100:", cedula100);
+           console.log("50:", cedula50);
+           console.log("20:", cedula20);
+           console.log("10:", cedula10);
+           console.log("5:", cedula5);
+           console.log("2:", cedula2);
+           console.log("1:", cedula1);
+    </script>
+</body>
+</html>

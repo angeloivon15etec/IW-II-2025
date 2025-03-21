@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio09</title>
+</head>
+<body>
+
+    <script>
+        var somaTotal = 0;
+        var numero = prompt("Digite um número (digite um número negativo para encerrar):");
+
+        while (numero >= 0) {
+            somaTotal += parseInt(numero);
+            numero = prompt("Digite um número (digite um número negativo para encerrar):");
+        }
+
+        console.log("Soma total: " + somaTotal + ". Você digitou um número negativo, o processo foi encerrado.");
+    </script>
+</body>
+</html>

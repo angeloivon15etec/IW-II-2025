@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio10</title>
+</head>
+<body>
+
+    <script>
+        var num = 4;
+        var tentativa = prompt("Tente adivinhar o número entre 1 e 10:");
+
+        while (tentativa != num) {
+            if (tentativa < num) {
+                console.log (alert("Errou! O número é maior. Tente novamente."));
+            } else {
+               console.log (alert("Errou! O número é menor. Tente novamente."));
+            }
+            tentativa = prompt("Tente adivinhar o número entre 1 e 10:");
+        }
+
+        console.log("Parabéns! Você acertou!");
+    </script>
+</body>
+</html>

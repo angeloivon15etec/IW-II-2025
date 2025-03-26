@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio02r</title>
+    <script>
+        function ehPar(numero) {
+            return numero % 2 === 0;
+        }
+        function verificarPar() {
+            let num = parseInt(document.getElementById('numero').value);
+
+            if (ehPar(num)) {
+                console.log(num + " é um número par!");
+            } else {
+                console.log(num + " é um número ímpar!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Verificar se um número é par</h1>
+    <label for="numero">Digite um número: </label>
+    <input type="number" id="numero" placeholder="Exemplo: 4">
+    <button onclick="verificarPar()">Verificar</button>
+</body>
+</html>

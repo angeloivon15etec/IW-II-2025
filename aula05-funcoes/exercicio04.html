@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Média</title>
+    <script>
+        function calcularMedia(lista) {
+            if (lista.length === 0) {
+                return "A lista está vazia!";
+            }
+
+            let soma = 0;
+            for (let num of lista) {
+                soma += num;
+            }
+
+            return soma / lista.length;
+        }
+        function exibirMedia() {
+            let numerosTexto = document.getElementById('numeros').value;
+            
+            let numeros = numerosTexto.split(',').map(num => parseFloat(num.trim()));
+
+            let resultado = calcularMedia(numeros);
+            alert("A média dos números é: " + resultado.toFixed(2));
+        }
+    </script>
+</head>
+<body>
+    <h1>Calcular Média de Números</h1>
+    <label for="numeros">Digite os números separados por vírgula: </label>
+    <input type="text" id="numeros" placeholder="Exemplo: 10, 20, 30">
+    <button onclick="exibirMedia()">Calcular Média</button>
+</body>
+</html>

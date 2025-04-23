@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>exercicio02</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+    img {
+      width: 200px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    #ligar {
+      background-color: #28a745;
+      color: white;
+    }
+    #desligar {
+      background-color: #dc3545;
+      color: white;
+    }
+    #estado {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lâmpada</h1>
+  <img id="lampada" src="img/lampada-desligada.png" alt="Lâmpada Desligada">
+  <div>
+    <button id="ligar">Ligar</button>
+    <button id="desligar">Desligar</button>
+  </div>
+  <p id="estado">A lâmpada está desligada.</p>
+
+  <script src="script02.js"></script>
+</body>
+</html>

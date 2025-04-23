@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercicio01</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 50px;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    .main-image {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .imagens {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: transform 0.2s;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Trocar imagens</h1>
+
+  <img id="firstimage" class="main-image" src="img/SteveMinecraft.png" alt="Imagem Principal">
+
+  <div class="imagens">
+    <img class="image" src="img/steve o filme.webp" onclick="trocarImagem(this)">
+    <img class="image" src="img/Leonardo_Anime_XL_faa_o_steve_do_minecraft_realista_e_apenas_o_0.jpg" onclick="trocarImagem(this)">
+    <img class="image" src="img/SteveMinecraft.png" onclick="trocarImagem(this)">
+  </div>
+
+  <script src="script01.js"></script>
+
+</body>
+</html>

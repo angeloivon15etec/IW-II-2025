@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Exercício 14</title>
+ <script>
+ function mouseEmCima(imagem){
+ imagem.src = "pngtree-duck-poultry-white-transparent-png-image_6653169.png";
+ }
+ function mouseFora(imagem){
+ imagem.src = "pngtree-caring-for-hens-essential-tips-healthy-and-happy-chickens-png-image_13402671.png";
+ }
+ </script>
+</head>
+<body>
+ Passe o mouse sobre a imagem: <br><br>
+ <img src="pngtree-caring-for-hens-essential-tips-healthy-and-happy-chickens-png-image_13402671.png" onMouseOver="mouseEmCima(this)" width="300" height="300"><br><br>
+ <img src="pngtree-duck-poultry-white-transparent-png-image_6653169.png" onMouseOver="mouseFora(this)" width="300" height="300"><br><br>
+ <!--
+ width="300" height="300" : dentro da tag img src
+ onclick="mouseEmCima(this)"
+ onMouseOver="mouseEmCima(this)"
+ -->
+</body>
+</html>

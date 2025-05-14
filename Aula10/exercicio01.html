@@ -1,0 +1,27 @@
+     <!DOCTYPE html>
+     <html lang="pt-br">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exercicio 01</title>
+     </head>
+     <body>
+        <input type="text" id="caixa" placeholder="Digite um texto" onkeyup="executar()">
+        <br>
+        <p>texto recebido é: <span id="texto"></span></p>
+
+
+         <script>
+            var texto = document.getElementById("texto");
+            var caixa = document.getElementById("caixa");
+
+            function executar(){
+                var letra = caixa.value;
+                texto.innerHTML = letra;
+
+            }
+
+
+         </script>
+     </body>
+     </html>

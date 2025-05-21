@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio3</title>
+</head>
+<body>
+  <input type="text" id="meuInput" placeholder="Digite algo..." />
+  <button id="meuBotao">Mostrar Alerta</button>
+
+  <script>
+    const input = document.getElementById('meuInput');
+    const botao = document.getElementById('meuBotao');
+
+    let ultimoValorExibido = '';
+
+    botao.addEventListener('click', function () {
+      const valorAtual = input.value;
+
+      if (valorAtual !== '' && valorAtual !== ultimoValorExibido) {
+        alert(valorAtual);
+        ultimoValorExibido = valorAtual;
+      }
+    });
+
+    input.addEventListener('input', function () {
+
+    });
+  </script>
+</body>
+</html>
+
+</body>
+</html>
